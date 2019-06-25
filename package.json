@@ -2,7 +2,7 @@
   "name": "where-in-the-world",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https:/jasminegmp.github.io/where-in-the-world-react-app",
+  "homepage": "https://jasminegmp.github.io/where-in-the-world-react-app",
   "dependencies": {
     "gh-pages": "^2.0.1",
     "react": "^16.8.6",
