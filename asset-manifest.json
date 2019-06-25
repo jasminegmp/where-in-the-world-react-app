@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/jasminegmp.github.io/where-in-the-world-react-app/static/js/main.77455247.chunk.js",
-    "main.js.map": "/jasminegmp.github.io/where-in-the-world-react-app/static/js/main.77455247.chunk.js.map",
-    "runtime~main.js": "/jasminegmp.github.io/where-in-the-world-react-app/static/js/runtime~main.b5103418.js",
-    "runtime~main.js.map": "/jasminegmp.github.io/where-in-the-world-react-app/static/js/runtime~main.b5103418.js.map",
-    "static/js/2.3310f33a.chunk.js": "/jasminegmp.github.io/where-in-the-world-react-app/static/js/2.3310f33a.chunk.js",
-    "static/js/2.3310f33a.chunk.js.map": "/jasminegmp.github.io/where-in-the-world-react-app/static/js/2.3310f33a.chunk.js.map",
-    "index.html": "/jasminegmp.github.io/where-in-the-world-react-app/index.html",
-    "precache-manifest.3b6d2e5f08ac8390bbfe2cabfb57b801.js": "/jasminegmp.github.io/where-in-the-world-react-app/precache-manifest.3b6d2e5f08ac8390bbfe2cabfb57b801.js",
-    "service-worker.js": "/jasminegmp.github.io/where-in-the-world-react-app/service-worker.js"
+    "main.js": "/where-in-the-world-react-app/static/js/main.77455247.chunk.js",
+    "main.js.map": "/where-in-the-world-react-app/static/js/main.77455247.chunk.js.map",
+    "runtime~main.js": "/where-in-the-world-react-app/static/js/runtime~main.3c198c74.js",
+    "runtime~main.js.map": "/where-in-the-world-react-app/static/js/runtime~main.3c198c74.js.map",
+    "static/js/2.3310f33a.chunk.js": "/where-in-the-world-react-app/static/js/2.3310f33a.chunk.js",
+    "static/js/2.3310f33a.chunk.js.map": "/where-in-the-world-react-app/static/js/2.3310f33a.chunk.js.map",
+    "index.html": "/where-in-the-world-react-app/index.html",
+    "precache-manifest.d40afd5e738508f1ff7bf7894c1f02be.js": "/where-in-the-world-react-app/precache-manifest.d40afd5e738508f1ff7bf7894c1f02be.js",
+    "service-worker.js": "/where-in-the-world-react-app/service-worker.js"
   }
 }
