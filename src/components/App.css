@@ -1,0 +1,17 @@
+.ui.segment{
+	max-width: 70%;
+}
+
+.light-mode{
+	background: hsl(0, 0%, 98%);
+	color: hsl(200, 15%, 8%);
+}
+
+.dark-mode{
+	background: hsl(207, 26%, 17%);
+	color:hsl(0, 0%, 100%);
+}
+
+.dark-mode > .ui.container > .ui.segment {
+	background: hsl(207, 26%, 17%);
+}

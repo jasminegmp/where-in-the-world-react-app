@@ -7,7 +7,7 @@ const CountriesList = ({countries}) =>{
 		return <Country key = {country.name} country = {country}/>;
 	});
 	return (
-		<div className ="ui link cards">
+		<div className ="ui centered link cards">
 			{renderedList}
 		</div>
 	);
