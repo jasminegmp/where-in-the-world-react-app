@@ -35,8 +35,8 @@ class App extends React.Component {
 	      <div className = "ui container">
 	        <SearchBar callMeWhenSubmitted = {this.onCountrySubmit}/>
 	        <Switch>
-	        	<Route exact path='/' render={(props) => (<CountriesList countries={this.state.countries} {...props} />)} />
-				<Route path="/:id" render={(props) => (<CountryDetail countries={this.state.countries} {...props} />)} />
+	        	<Route exact path={process.env.PUBLIC_URL + '/'} render={(props) => (<CountriesList countries={this.state.countries} {...props} />)} />
+				<Route path={process.env.PUBLIC_URL + '/:id'} render={(props) => (<CountryDetail countries={this.state.countries} {...props} />)} />
 			</Switch>
 	      </div>
       </Router>
