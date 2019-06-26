@@ -1,6 +1,7 @@
 import React from 'react';
 import SearchBar from './SearchBar'
 import axios from 'axios';
+import CountriesList from './CountriesList'
 
 class App extends React.Component {
 
@@ -30,6 +31,7 @@ class App extends React.Component {
     return (
       <div className = "ui container">
         <SearchBar callMeWhenSubmitted = {this.onCountrySubmit}/>
+        <CountriesList countries = {this.state.countries}/>
       </div>
     );
   }
