@@ -6,7 +6,20 @@ const Country = ({country}) => {
 	return (
 		
 		<div className ="ui card country-class">
-			<Link to ={{pathname: `${country.name}`, name: country.name, flag: country.flag}}>
+			<Link to ={{pathname: `${country.name}`, 
+						name: country.name, 
+						flag: country.flag,
+						nativeName: country.nativeName,
+						population: country.population,
+						region: country.region,
+						subregion: country.subregion,
+						capital: country.capital, 
+						topLevelDomain: country.topLevelDomain,
+						currencies: country.currencies,
+						languages: country.languages,
+						borders: country.borders
+
+			}}>
 				<div className ="image">
 					<img src={country.flag} alt = {country.name} />
 				</div>
