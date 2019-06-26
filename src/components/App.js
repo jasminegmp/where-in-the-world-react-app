@@ -4,6 +4,7 @@ import axios from 'axios';
 import CountriesList from './CountriesList';
 import CountryDetail from './CountryDetail';
 import Mode from './Mode';
+import Region from './Region'
 import './App.css'
 import { Route, Link, BrowserRouter as Router, Switch } from 'react-router-dom'
 
@@ -12,7 +13,8 @@ class App extends React.Component {
 	state = {
 		countries: [],
 		selectedCountry: null,
-		mode: null
+		mode: null,
+		region: ""
 	};
 
 	// loads all the countries
@@ -39,6 +41,14 @@ class App extends React.Component {
 	};
 
 
+	filterByRegion = (region) => {
+		this.setState({region: region}, function () {
+             console.log("region:",this.state.region);
+        });
+	}
+
+
+
   render(){
     return (
     <Router>
@@ -46,8 +56,9 @@ class App extends React.Component {
 	      <div className = "ui centered container">
 	      	<Mode callMeWhenClicked = {this.checkMode}/>
 	        <SearchBar callMeWhenSubmitted = {this.onCountrySubmit}/>
+	        <Region onClicking = {this.filterByRegion}/>
 	        <Switch>
-	        	<Route exact path={process.env.PUBLIC_URL + '/'} render={(props) => (<CountriesList countries={this.state.countries} {...props} />)} />
+	        	<Route exact path={process.env.PUBLIC_URL + '/'} render={(props) => (<CountriesList countries={this.state.countries} region = {this.state.region} {...props} />)} />
 				<Route path={process.env.PUBLIC_URL + '/:id'} render={(props) => (<CountryDetail countries={this.state.countries} {...props} />)} />
 			</Switch>
 	      </div>
