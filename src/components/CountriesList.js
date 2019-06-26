@@ -5,9 +5,7 @@ const CountriesList = ({countries, region}) =>{
 
 	if(region !== "") // need to filter by region
 	{
-		console.log("filter request: ", region);
-		const filteredList = countries.filter((country) => region == country.region);
-		console.log("filtered list: ", filteredList);
+		const filteredList = countries.filter((country) => region === country.region);
 		const renderedList = filteredList.map((country) => {
 			return <Country key = {country.name} country = {country}/>;
 		});

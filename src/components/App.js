@@ -6,7 +6,7 @@ import CountryDetail from './CountryDetail';
 import Mode from './Mode';
 import Region from './Region'
 import './App.css'
-import { Route, Link, BrowserRouter as Router, Switch } from 'react-router-dom'
+import { Route, BrowserRouter as Router, Switch } from 'react-router-dom'
 
 class App extends React.Component {
 
