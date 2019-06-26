@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7ce6e3485155b71d7fe4f893f6b99dcc",
+    "revision": "388a872c95380431059128f26588a862",
     "url": "/where-in-the-world-react-app/index.html"
   },
   {
-    "revision": "4fb0218e59258ce7b878",
+    "revision": "d6af1dcd5255e42b1445",
     "url": "/where-in-the-world-react-app/static/css/main.ec4def47.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/where-in-the-world-react-app/static/js/2.f103b5d2.chunk.js"
   },
   {
-    "revision": "4fb0218e59258ce7b878",
-    "url": "/where-in-the-world-react-app/static/js/main.fa95246a.chunk.js"
+    "revision": "d6af1dcd5255e42b1445",
+    "url": "/where-in-the-world-react-app/static/js/main.0bed28bf.chunk.js"
   },
   {
     "revision": "aeb9e6cfd8aea3b29797",
