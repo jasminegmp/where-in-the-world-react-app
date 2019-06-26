@@ -1,7 +1,9 @@
 import React from 'react';
 import SearchBar from './SearchBar'
 import axios from 'axios';
-import CountriesList from './CountriesList'
+import CountriesList from './CountriesList';
+import CountryDetail from './CountryDetail';
+import { Route, Link, BrowserRouter as Router, Switch } from 'react-router-dom'
 
 class App extends React.Component {
 
@@ -29,10 +31,15 @@ class App extends React.Component {
 
   render(){
     return (
-      <div className = "ui container">
-        <SearchBar callMeWhenSubmitted = {this.onCountrySubmit}/>
-        <CountriesList countries = {this.state.countries}/>
-      </div>
+    <Router>
+	      <div className = "ui container">
+	        <SearchBar callMeWhenSubmitted = {this.onCountrySubmit}/>
+	        <Switch>
+	        	<Route exact path='/' render={(props) => (<CountriesList countries={this.state.countries} {...props} />)} />
+				<Route path="/:id" render={(props) => (<CountryDetail countries={this.state.countries} {...props} />)} />
+			</Switch>
+	      </div>
+      </Router>
     );
   }
 
