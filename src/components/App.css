@@ -1,5 +1,11 @@
-.ui.segment{
-	max-width: 70%;
+.ui.button {
+	margin-bottom: 5px;
+	margin-top: 10px;
+}
+
+
+.ui.grid >.centered.column, .ui.centered.grid>.row, .ui.cards {
+	margin-top: 20px;
 }
 
 .light-mode{
@@ -12,6 +18,16 @@
 	color:hsl(0, 0%, 100%);
 }
 
-.dark-mode > .ui.container > .ui.segment {
+.dark-mode > .ui.container > .ui.centered.grid > .ui.cards > .card{
 	background: hsl(207, 26%, 17%);
+	color: hsl(0, 0%, 100%);
 }
+
+.dark-mode > .ui.container > .ui.centered.grid > .ui.cards > .card > .content > .header{
+	color: hsl(0, 0%, 100%);
+}
+
+.dark-mode > .ui.container > .ui.centered.grid > .ui.cards > .card > .content > .description{
+	color: hsl(0, 0%, 100%);
+}
+

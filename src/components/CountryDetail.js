@@ -1,4 +1,5 @@
 import React from 'react';
+import './CountryDetail.css';
 
 
 class CountryDetail extends React.Component {
@@ -14,11 +15,11 @@ class CountryDetail extends React.Component {
 
 	render(){
 		const currencyList = this.props.location.currencies.map((country) =>
-        	<div key={country.name}>{country.name}</div>);
+        	<div className = "info-list-item" key={country.name}>{country.name}</div>);
         const languageList = this.props.location.languages.map((language) =>
-        	<div key={language.name}>{language.name}</div>);
+        	<div className = "item info-list-item" key={language.name}>{language.name}</div>);
         const borderCountriesList = this.props.location.borders.map((borderCountry) =>
-        	<div key={borderCountry}>{borderCountry}</div>);
+        	<div className = "info-list-item" key={borderCountry}>{borderCountry}</div>);
 
 		return(
 			<div className = "ui grid">
@@ -26,17 +27,17 @@ class CountryDetail extends React.Component {
 					<div className = "eight wide column">
 						<img src={this.props.location.flag} alt = {this.props.location.name} />
 					</div>
-					<div className = "eight wide column">
-						<div><h1>{this.props.location.name}</h1></div>
-						<div><strong>Native name:</strong> {this.props.location.nativeName}</div>
-						<div><strong>Population:</strong> {this.props.location.population}</div>
-						<div><strong>Region:</strong> {this.props.location.region}</div>
-						<div><strong>Subregion:</strong> {this.props.location.subregion}</div>
-						<div><strong>Capital:</strong> {this.props.location.capital}</div>
-						<div><strong>Top Level Domain:</strong> {this.props.location.topLevelDomain}</div>
-						<div><strong>Currency:</strong>{currencyList}</div>
-						<div><strong>Languages:</strong>{languageList}</div>
-						<div><strong>Border Countries:</strong>{borderCountriesList}</div>
+					<div className = "eight wide column info-area">
+						<div className = "info-item"><h1>{this.props.location.name}</h1></div>
+						<div className = "info-item"><strong>Native name:</strong> {this.props.location.nativeName}</div>
+						<div className = "info-item"><strong>Population:</strong> {this.props.location.population}</div>
+						<div className = "info-item"><strong>Region:</strong> {this.props.location.region}</div>
+						<div className = "info-item"><strong>Subregion:</strong> {this.props.location.subregion}</div>
+						<div className = "info-item"><strong>Capital:</strong> {this.props.location.capital}</div>
+						<div className = "info-item"><strong>Top Level Domain:</strong> {this.props.location.topLevelDomain}</div>
+						<div className = "info-item list"><strong>Currency:</strong> {currencyList}</div>
+						<div className = "info-item list"><strong>Languages:</strong> {languageList}</div>
+						<div className = "info-item list"><strong>Border Countries:</strong> {borderCountriesList}</div>
 					</div>
 				</div>
 				<div className = "ui row">

@@ -53,15 +53,30 @@ class App extends React.Component {
     return (
     <Router>
     	<div className = {this.state.mode === 'light'? 'light-mode': 'dark-mode'}>
-	      <div className = "ui centered container">
-	      	<Mode callMeWhenClicked = {this.checkMode}/>
-	        <SearchBar callMeWhenSubmitted = {this.onCountrySubmit}/>
-	        <Region onClicking = {this.filterByRegion}/>
-	        <Switch>
-	        	<Route exact path={process.env.PUBLIC_URL + '/'} render={(props) => (<CountriesList countries={this.state.countries} region = {this.state.region} {...props} />)} />
-				<Route path={process.env.PUBLIC_URL + '/:id'} render={(props) => (<CountryDetail countries={this.state.countries} {...props} />)} />
-			</Switch>
-	      </div>
+	      <div className = "ui container">
+		      <div className="ui two column centered grid">
+		      	<div className="two column centered row">
+		      		<div className = "column">
+		      			<h1>Where in the World?</h1>
+		      		</div>
+		      		<div className = "column" style = {{textAlign: 'right'}}>
+		      			<Mode callMeWhenClicked = {this.checkMode}/>
+		      		</div>
+		      	</div>
+		      	<div className="row middle aligned">
+		      		<div className = "ten wide column">
+		        		<SearchBar callMeWhenSubmitted = {this.onCountrySubmit}/>
+		        	</div>
+		        	<div className = "six wide column">	
+		        		<Region onClicking = {this.filterByRegion}/>
+		        	</div>
+		        </div>
+		        <Switch>
+		        	<Route exact path={process.env.PUBLIC_URL + '/'} render={(props) => (<CountriesList countries={this.state.countries} region = {this.state.region} {...props} />)} />
+					<Route path={process.env.PUBLIC_URL + '/:id'} render={(props) => (<CountryDetail countries={this.state.countries} {...props} />)} />
+				</Switch>
+		      </div>
+		      </div>
 	      </div>
       </Router>
     );

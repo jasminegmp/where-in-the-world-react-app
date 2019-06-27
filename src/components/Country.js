@@ -28,9 +28,9 @@ const Country = ({country}) => {
 			<div className ="content">
 				<div className ="header">{country.name}</div>
 				<div className ="description">
-					<p>Population: {country.population}</p>
-					<p>Region: {country.region}</p>
-					<p>Capital: {country.capital}</p>
+					<p><strong>Population:</strong> {country.population}</p>
+					<p><strong>Region:</strong> {country.region}</p>
+					<p><strong>Capital:</strong> {country.capital}</p>
 				</div>
 			</div>
 			

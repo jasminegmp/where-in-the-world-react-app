@@ -25,13 +25,12 @@ class Region extends React.Component{
 	render(){
 		return(
 			<div>
-				<label>Filter by Region</label>
 
 				<select name="items" multiple=""
 					className="ui fluid dropdown" 
 					onChange = {this.handleChange}
 					value = {this.state.region}>
-					<option value="">Region</option>
+					<option value="">Filter by Region</option>
 					<option value="Africa">Africa</option>
 					<option value="Americas">Americas</option>
 					<option value="Asia">Asia</option>
