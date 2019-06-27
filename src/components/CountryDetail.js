@@ -22,7 +22,7 @@ class CountryDetail extends React.Component {
         	<div className = "info-list-item" key={borderCountry}>{borderCountry}</div>);
 
 		return(
-			<div className = "ui grid">
+			<div className = "ui stackable grid">
 				<div className = "ui row">
 					<div className = "eight wide column">
 						<img src={this.props.location.flag} alt = {this.props.location.name} />
