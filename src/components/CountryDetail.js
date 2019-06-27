@@ -13,16 +13,21 @@ class CountryDetail extends React.Component {
 		this.props.history.goBack();
 	}
 
+
 	render(){
 		const currencyList = this.props.location.currencies.map((country) =>
         	<div className = "info-list-item" key={country.name}>{country.name}</div>);
         const languageList = this.props.location.languages.map((language) =>
         	<div className = "item info-list-item" key={language.name}>{language.name}</div>);
         const borderCountriesList = this.props.location.borders.map((borderCountry) =>
-        	<div className = "info-list-item" key={borderCountry}>{borderCountry}</div>);
+        	<button className = "ui button info-list-item" key={borderCountry} >{borderCountry}</button>
+        	);
 
 		return(
-			<div className = "ui stackable grid">
+			<div className = "ui container stackable grid">
+				<div className = "ui row">
+					<button className="ui button" onClick={this.goBack}>Back</button>
+				</div>
 				<div className = "ui row">
 					<div className = "eight wide column">
 						<img src={this.props.location.flag} alt = {this.props.location.name} />
@@ -40,15 +45,10 @@ class CountryDetail extends React.Component {
 						<div className = "info-item list"><strong>Border Countries:</strong> {borderCountriesList}</div>
 					</div>
 				</div>
-				<div className = "ui row">
-					<button className="ui button" onClick={this.goBack}>Go Back</button>
-				</div>
+				
 			</div>
 		);		
 	}
 }
-
-
-
 
 export default CountryDetail;

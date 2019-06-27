@@ -6,7 +6,7 @@ const Country = ({country}) => {
 	return (
 		
 		<div className ="ui card country-class">
-			<Link to ={{pathname: `${country.name}`, 
+			<Link to ={{pathname: `${country.alpha3Code}`, 
 						name: country.name, 
 						flag: country.flag,
 						nativeName: country.nativeName,
